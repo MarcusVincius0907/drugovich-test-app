@@ -1,0 +1,29 @@
+{
+  "clients": [
+    {
+      "id": 0,
+      "name": "Auto-Peças Joaquim LTDA.",
+      "cnpj": "000.000.000/00000-00",
+      "status": "Inativo"
+    },
+    {
+      "id": 1,
+      "name": "Auto-Peças Joaquim LTDA.",
+      "cnpj": "000.000.000/00000-00",
+      "status": "Ativo"
+    },
+    {
+      "id": 2,
+      "name": "Auto-Peças Joaquim LTDA.",
+      "cnpj": "000.000.000/00000-00",
+      "status": "Ativo"
+    },
+    {
+      "id": 3,
+      "name": "Auto-Peças Joaquim LTDA.",
+      "cnpj": "000.000.000/00000-00",
+      "status": "Ativo"
+    }
+
+  ]
+}
