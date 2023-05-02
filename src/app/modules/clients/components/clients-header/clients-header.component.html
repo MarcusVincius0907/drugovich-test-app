@@ -1,0 +1,14 @@
+<div class="flex flex-wrap justify-between items-center border-b border-[#DDDDDD] pb-1 px-2">
+  <div class="flex items-center min-w-[420px]">
+    <div class="mr-2">
+      <img class="w-[20px] h-[20px]" src="assets/user.svg" />
+    </div>
+    <h1 class="text-2xl">{{title}}</h1>
+  </div>
+  <div *ngIf="showButton" class="flex">
+    <div (click)="onButtonActionClick()" class="flex bg-[#4486EA] text-white rounded p-2 cursor-pointer hover:opacity-90">
+      <img class="mr-[8px]" src="assets/plus.svg">
+      <div>NOVO</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div (click)="onEditClient(item)" *ngFor="let item of clientsList" class="flex bg-white rounded mb-2 p-2 h-[51px] items-center w-full min-w-[650px]">
+  <div class="w-full text-lg px-1">{{item.name}}</div>
+  <div class="text-sm w-[80%] px-1">{{item.cnpj}}</div>
+  <div class="w-full flex justify-end px-1">
+    <div class="flex items-center w-[80px]">
+      <div class="w-[14px] h-[14px] rounded-full " [class]="[item.status === 'Ativo' ? 'bg-[#2ACC30]' : 'bg-[#EC2424]' ]"> </div>
+      <div class="ml-2 text-sm">{{item.status}} </div>
+    </div>
+  </div>
+  <div class="w-full flex justify-end px-1">
+    <div class="flex justify-center items-center bg-[#E18F53] text-white rounded p-2 cursor-pointer hover:opacity-90 h-[34px] w-[91px]">
+      <div>EDITAR</div>
+    </div>
+  </div>
+</div>

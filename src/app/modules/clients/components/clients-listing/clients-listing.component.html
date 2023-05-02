@@ -1,0 +1,19 @@
+<div class="mt-[70px] max-w-5xl m-auto md:px-10 px-3 ">
+
+  <!-- top -->
+  <clients-header [title]="'Listagem de Clientes'" [showButton]="true" (buttonAction)="registerClient()" ></clients-header>
+
+  <!-- middle -->
+  <div *ngIf="!(loading$ | async); else loader" class="mt-[45px]  overflow-x-auto">
+    <list [clientsList]="list" (onEditClientButtonAction)="editClient($event)"></list>
+  </div>
+  <ng-template #loader>
+    <div class="flex justify-center mt-[45px] ">
+      <div class="loading client-list"></div>
+    </div>
+  </ng-template>
+  <div *ngIf="list.length !== 0" class="mt-[15px]  text-sm">
+    Exibindo {{list.length}} de {{list.length}}
+  </div>
+
+</div>

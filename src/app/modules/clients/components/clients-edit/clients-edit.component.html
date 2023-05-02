@@ -1,0 +1,13 @@
+
+<div class="mt-[70px] max-w-5xl m-auto md:px-10 px-3 ">
+
+  <!-- top -->
+  <clients-header [title]="'Editar Cliente'" [showButton]="false" ></clients-header>
+
+  <!-- middle -->
+  <div class="mt-[45px]">
+    <clients-form [clientToEditData]="selectedClient" (onSaveFormButtonAction)="onSave($event)" ></clients-form>
+  </div>
+
+
+</div>
